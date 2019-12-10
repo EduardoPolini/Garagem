@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge 29</title>
+    <style>
+        table {
+            text-align: center;
+            float: inline-start;
+            width: 50%;
+        }
+
+        form {
+            float:inline-end;
+            width: 35%;
+        }
+
+        img {
+            max-width: 100px;
+            height: auto;
+            float:initial;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            padding: 5px;
+            width: 308px;
+        }
+
+        button {
+            background : darkgreen;
+            border: 0;
+            color: white;
+            padding: 10px 20 px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 5px 15px;
+            border: 1px solid lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2><span data-js="name"></span> - <span data-js="phone"></span></h2>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Imagem do Carro</th>
+                <th>Marca / Modelo</th>
+                <th>Ano</th>
+                <th>Placa</th>
+                <th>Cor</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+
+        <tbody data-js="table"></tbody>
+    </table>
+
+    
+    <form action="/" data-js="register">
+        <ul>
+            <li>
+                <label>Imagem do Carro</label>
+                <input type="url" data-js="image">
+            </li>
+
+            <li>
+                    <label>Marca/Modelo</label>
+                    <input type="text" data-js="model">
+            </li>
+
+            <li>
+                    <label>Ano</label>
+                    <input type="text" data-js="year">
+            </li>
+
+            <li>
+                    <label>Placa</label>
+                    <input type="text" data-js="plate">
+            </li>
+
+            <li>
+                    <label>Cor</label>
+                    <input type="text" data-js="color">
+            </li>
+
+            <li>
+                <button type="submit">Cadastrar</button>
+            </li>
+        </ul>    
+    </form>
+
+    <script src="dom.js"></script>
+    <script src="challenge-31.js"></script>    
+</body>
+</html>
